@@ -1,8 +1,97 @@
----
-layout: default
-title: Zac Moss, Web Developer
----
-<div class="blurb">
-	<h1>Hi there, I'm Hank Quinlan!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+<html>
+    <head>
+        <title>Zac's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top" id="banner">
+            <div class="container headerContainer" href="#top">
+              
+              <a class="scrollable blackLink" href="#">Zac Moss</a>
+              <nav class="navbar-right" id="navbar" role="navigation">
+                <div class="navContainer">
+                  <a class="scrollable blackLink" href="#top">About</a>
+                  <a class="scrollable spaceLeft blackLink" href="#portfolio">Portfolio</a>
+                  <a class="scrollable spaceLeft blackLink" href="#contact">Contact</a>
+                </div>
+              </nav>
+          
+            </div>
+          </header>
+          <section id="top">
+          <div class="container">
+            <div class="row profilePicContainer">
+              <div class="profileInfo vertical-center">
+                <p>Web Developer, proficient in HTML, CSS, and Javascript. Experience with libraries like JQuery and React, and knowledgable of tools like Webpack, Babel, Firebase, Git, and Redux.</p>
+              </div>
+              <img id="profilePic" src="https://lh3.google.com/u/0/d/12j3P8FH9QH02vR25hLuY0VPlBf8u8Hz2=w1143-h610-iv1" height="250px" width="250px" />
+            </div>
+          </div>
+          </section>
+            
+          <section id="portfolio">
+          <div id="imgDiv" class="container">
+            <div>
+              <h2 id="portfolioTitle">Portfolio</h2>
+            </div>
+            <div class="row imgRow">
+              <div class="imgCard">
+                <p class="cardTitle"><span><a href="http://zacmoss-com.stackstaging.com/16-events/">Event Poster</a></span></p>
+                <p class="cardSubtitle"><i>Javascript, PHP, MySQL</i></p>
+              <a href="http://zacmoss-com.stackstaging.com/16-events/"><img src="https://lh3.google.com/u/0/d/1pDKJyzizlEqcUoitpx5MJAlD8DLQ-3e_=w1143-h610-iv1" height="250px" width="360px" /></a>
+              </div>
+              
+              <div class="imgCard">
+                <p class="cardTitle"><span><a href="https://zacs-expensify-app.herokuapp.com">Expensify App</a></span></p>
+                <p class="cardSubtitle"><i>React Js, Redux, Firebase</i></p>
+                <a href="https://zacs-expensify-app.herokuapp.com"><img src="https://lh3.google.com/u/0/d/1hp26fKlyGBOVz2jJQRSnpimNLcyKjP6n=w1143-h610-iv1" height="250px" width="360px" /></a>
+             </div>
+            </div>
+          
+            <div class="row imgRow">
+              <div class="imgCard">
+                <p class="cardTitle"><span><a href="https://foodpicker-app.herokuapp.com/">FoodPicker App</a></span></p>
+                <p class="cardSubtitle"><i>React Js, Webpack, Babel</i></p>
+                <a href="https://foodpicker-app.herokuapp.com/"><img src="https://lh3.google.com/u/0/d/1sf_r0TnbFwBdZOEjUhbts_Sa6XRundj1=w1143-h610-iv1" height="250px" width="360px" /></a>
+               </div>
+          
+               <div class="imgCard">
+                <p class="cardTitle"><span><a href="https://louisianajones.herokuapp.com/">Louisiana Jones Blog</a></span></p>
+                <p class="cardSubtitle"><i>HTML, Sass, React Js</i></p>
+                <a href="https://louisianajones.herokuapp.com/"><img src="https://lh3.google.com/u/0/d/1HijVBYrjgHuMmKzAv965rnjaubEImPZ0=w1143-h610-iv1" height="250px" width="360px" /></a>
+               </div>
+            </div>
+          </div>
+          </section>
+          
+          <section id="contact">
+          <div class="container">
+            <div class="row contactDiv">
+              <div class="row">
+                <div id="gitContainer">
+                <a href="https://github.com/zacmoss"><img src="https://lh3.google.com/u/0/d/1T8cx7DTDzUb3lmOMZZtQAsr-XF4bmluL=w1079-h610-iv1" id="github"height="100px" width="100px" /></a>
+                </div>
+                <div id="linkedInContainer">
+                <a href="https://www.linkedin.com/in/zac-moss-40330351/"><img src="https://lh3.google.com/u/0/d/1mrctapKTQSkS2GkeFBp8c6fKWM384lwe=w1079-h610-iv1" id="linkedIn" height="65px" width="65px" /></a>
+                </div>
+              </div>
+            </div>
+           </div>
+            <div class="container">
+             <p id="footer">Written and coded by <a href="https://portfolio-site-v5.herokuapp.com/">Zac Moss</a>.</p>
+            </div>
+          </section>
+
+
+    </body>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</html>

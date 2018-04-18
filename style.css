@@ -1,0 +1,125 @@
+#banner {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 1rem 0;
+  /*background-color: #bfbfbf;*/
+  background-color: white;
+  box-shadow: .5px 1px 1px;
+}
+
+.headerContainer {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.spaceLeft {
+  margin-left: 1rem;
+}
+
+.blackLink {
+  color: black;
+}
+
+.blackLink:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+.blackLink:active {
+  background-color: white;
+}
+
+#portfolioTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#imgDiv img {
+  border: 1px black solid;
+}
+
+.profilePicContainer {
+  justify-content: space-between;
+  margin: 6rem 2rem 2rem 2rem;
+  height: 200px;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.profileInfo {
+  width: 60%;
+}
+
+#profilePic {
+  border-radius: 50%;
+  right: 0;
+  left: auto;
+}
+#imgDiv {
+  margin-top: 6rem;
+}
+.imgRow {
+  margin: 3rem 2rem;
+  justify-content: space-between;
+}
+
+.imgCard p {
+  text-align: center;
+}
+
+.imgCard a {
+  color: black;
+}
+
+.imgCard a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.cardTitle {
+  margin-bottom: 0;
+  font-size: 120%;
+}
+
+.cardSubtitle {
+  font-size: 80%;
+}
+
+.contactDiv {
+  margin: 4rem 2rem 2rem 2rem;
+  justify-content: space-around;
+}
+
+#gitContainer {
+  width: 112px;
+  height: 112px;
+}
+
+#github:hover {
+  width: 105px;
+  height: 105px;
+}
+
+#linkedInContainer {
+  width: 70px;
+  height: 70px;
+}
+
+#linkedIn {
+  margin: 1.25rem 0 0 0;
+}
+
+#linkedIn:hover {
+  height: 70px;
+  width: 70px;
+}
+
+#footer {
+  text-align: center;
+}

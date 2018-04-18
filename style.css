@@ -43,6 +43,7 @@
   justify-content: space-between;
   margin: 6rem 2rem 2rem 2rem;
   height: 200px;
+  border: 1px black solid;
 }
 
 .vertical-center {

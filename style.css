@@ -30,25 +30,15 @@
   background-color: white;
 }
 
-#portfolioTitle {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-#imgDiv img {
-  border: 1px black solid;
-}
-
 .profilePicContainer {
   justify-content: space-between;
   margin: 6rem 2rem 2rem 2rem;
   height: 200px;
-  border: 1px black solid;
 }
 
 .vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
+  /*min-height: 100%;*/
+  /*min-height: 100vh;*/
   display: flex;
   align-items: center;
 }
@@ -59,11 +49,20 @@
 
 #profilePic {
   border-radius: 50%;
-  right: 0;
-  left: auto;
+  /*right: 0;*/
+  /*left: auto;*/
+}
+
+#portfolioTitle {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 #imgDiv {
   margin-top: 6rem;
+}
+
+#imgDiv img {
+  border: 1px black solid;
 }
 .imgRow {
   margin: 3rem 2rem;

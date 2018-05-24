@@ -238,7 +238,24 @@ body, html {
   margin: 3rem 2rem;
   /*justify-content: space-around;*/
 }
-
+#imgBackground1 {
+  background-image: url("images/javascriptCalculator.png");
+  height: 250px;
+  width: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px black solid;
+}
+#imgBackground2 {
+  background-image: url("images/simonGame.png");
+  height: 250px;
+  width: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px black solid;
+}
 .imgCard p {
   text-align: center;
 }
@@ -426,6 +443,18 @@ body, html {
   text-align: center;
   line-height: 100px;
   border: 3px black solid;
+}
+#circle1:hover {
+  background-color: #D72D48;
+}
+#circle2:hover {
+  background-color: #2dd748;
+  /*
+  background-color: #48d72d;
+  */
+}
+#circle3:hover {
+  background-color: #2d48d7;
 }
 .circleContainer img {
   margin-top: .5rem;
@@ -630,16 +659,22 @@ body, html {
   display: none;
   border: 1px black solid;
   width: auto;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
+
+  color: black;
+  text-decoration: none;
+  margin: 1rem 0;
   /*
   height: 500px;
   line-height: 500px;
   */
 }
+/*
 #mobileEmail a {
   color: black;
   text-decoration: none;
 }
+*/
 #mobileEmail:hover {
   cursor: pointer;
   background-color: gold;
@@ -648,12 +683,18 @@ body, html {
   display: none;
   border: 1px black solid;
   width: auto;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
+
+  color: black;
+  text-decoration: none;
+  margin: 1rem 0;
 }
+/*
 #mobileResume a {
   color: black;
   text-decoration: none;
 }
+*/
 #mobileResume:hover {
   cursor: pointer;
   background-color: gold;

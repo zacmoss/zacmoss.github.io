@@ -22,7 +22,14 @@ function preloadImages(array) {
 preloadImages(["images/background1.jpg", "images/me3.jpg"]);
 
 
+<<<<<<< HEAD
 /*
+=======
+
+
+
+
+>>>>>>> 2a0adf8e5482bd3adb01dbdc9a8a284df85639bf
 function mobilizeEducation(x) {
     if (x.matches) { // If media query matches
         document.getElementById("educationContainer2").classList.remove("row");
@@ -36,7 +43,11 @@ function mobilizeEducation(x) {
 var x = window.matchMedia("(max-width: 800px)")
 mobilizeEducation(x) // Call listener function at run time
 x.addListener(mobilizeEducation) // Attach listener function on state changes
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 2a0adf8e5482bd3adb01dbdc9a8a284df85639bf
 
 
 
@@ -53,6 +64,7 @@ function mobilizeFooter(x) {
 
 var x = window.matchMedia("(max-width: 930px)")
 mobilizeFooter(x) // Call listener function at run time
+<<<<<<< HEAD
 x.addListener(mobilizeFooter) // Attach listener function on state changes
 
 
@@ -102,3 +114,6 @@ let leftClick = () => {
     document.getElementById("slide").setAttribute("src", "images/" + slide);
     document.getElementById("certLink").setAttribute("href", certLink);
 }
+=======
+x.addListener(mobilizeFooter) // Attach listener function on state changes
+>>>>>>> 2a0adf8e5482bd3adb01dbdc9a8a284df85639bf

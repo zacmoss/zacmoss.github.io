@@ -11,37 +11,87 @@ body, html {
 .space-between {
   justify-content: space-between;
 }
+.center {
+  justify-content: center;
+}
+.border {
+  border: 1px black solid;
+}
 
 
 
+
+/* ---- Nav ---- */
+
+#navContainer {
+  display: flex;
+  background-color: black;
+}
+#nav3 {
+  margin-left: 2rem;
+}
+#mobileAbout {
+  display: none;
+}
+@media (max-width: 930px) {
+  #educationNavLink {
+    display: none;
+  }
+  #coursesNavLink {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  #navContainer {
+    justify-content: space-around;
+  }
+  #nav3 {
+    margin-left: 0;
+  }
+  #mobileAbout {
+    display: inline;
+  }
+  #desktopAbout {
+    display: none;
+  }
+}
+#nav3 a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+#nav3 a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+/* ---- Intro Section ---- */
 
 #introImage {
   display: flex;
-  /*margin: -10 -10;*/
   background-image: url("images/background1.jpg");
   height: 100%;
-  /*height: 105%;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*position: relative;*/
-
-  /* Portfolio 2 Style */
-  border-bottom: 3px black solid;
+  /*border-bottom: 3px black solid;*/
 
 }
 #introBox {
-  /*background-color: white;*/
   background-color: rgba(250,250,250,.9);
+  padding: 1rem;
   margin-top: 10%;
   width: 30%;
-  height: 40%;
+  height: 240px;
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
   text-align: center;
   border-radius: 20px;
-  
-  text-shadow: 2px 2px 6px #D3D3D3; /* AWESOME */
-  /*border: 1px black solid;*/
+  text-shadow: 2px 2px 6px #D3D3D3;
 }
 #introBox h2 {
   font-weight: 400;
@@ -58,72 +108,35 @@ body, html {
   height: 85px;
   cursor: pointer;
 }
+@media (max-width: 930px) {
+  #introBox {
+    width: 40%;
+  }
+  #introImage {
+    border: none;
+  }
+}
+@media (max-width: 700px) {
+  #introBox {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  #introBox {
+    width: 70%;
+    margin-top: 20%;
+  }
+}
+
 
 
 
-#navContainer {
-  display: flex;
-  /*margin: -10 -10;*/
-  background-color: black;
-  /*font-family: 'Helvetica';*/
-}
-#nav3 {
-  /*padding: 1rem;*/
-  margin-left: 2rem;
-}
-#nav3 a {
-  padding: 1rem;
-  text-decoration: none;
-  color: white;
-}
-#nav3 a:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-}
 
+
+
+/* ---- Section Tags ---- */
 
 /*
-#intro span{
-  margin-left: 4rem;
-  margin-top: 2rem;
-  color: white;
-  width: 40%;
-  padding: 1rem;
-  /*height: 120px;*/
-  /*padding-top: 33px;*/
-  /*text-align: center;*//*
-  background-color: rgba(0,0,0,0.4);
-  border-radius: 20px;
-  /*height: 50%;*/
-  /*text-shadow: 2px 2px black;*//*
-  text-shadow: 2px 2px 8px black;
-  font-family: 'Arial';
-  font-size: 20px;
-  display: flex;
-}
-*/
-
-
-/*
-#intro span {
-  margin: 1rem;
-  background-color: rgba(0,0,0,0.5);;
-}
-
-
-#profilePicContainer {
-  width: 30%;
-  border: 1px white solid;
-}
-
-#profilePic {
-  border-radius: 50%;
-  /*right: 0;*/
-  /*left: auto;*//*
-}
-*/
-
 .tag {
   background-color: black;
   color: white;
@@ -132,132 +145,118 @@ body, html {
 #tag1 {
   margin-left: 2rem;
 }
-#tag2 {
-  margin-left: 5rem;
-}
-#tag3 {
+#tag3 { /* Education *//*
   margin-left: 8rem;
-}
-#tag4 {
-  margin-left: 11rem;
-  font-size: 16px;
-  position: absolute;
-  margin-top: -45;
 }
 #tag5 {
   margin-left: 11rem;
 }
-.tag2 {
-  background-color: black;
-  color: white;
-  margin-left: 2rem;
-  padding: .5rem;
-  width: 70px;
-  text-align: center;
+@media (max-width: 930px) {
+  #tag1 {
+    display: none;
+  }
+  #tag3 {
+    display: none;
+  }
+  #tag5 {
+    display: none;
+  }
 }
+*/
+
+
+
+/* ---- Portfolio Section ---- */
+
 #portfolioContainer2 {
-  border-bottom: 3px black solid;
+  /*border-bottom: 3px black solid;*/
   padding-bottom: 3rem;
 }
-
 #portfolioTitle {
   text-align: center;
   margin-bottom: 3rem;
 }
-#imgDiv {
-  margin-top: 3rem;
-}
-
 #imgDiv img {
   border: 1px black solid;
 }
 .imgRow {
   margin: 3rem 2rem;
-  /*justify-content: space-around;*/
 }
-
+#imgBackground1 {
+  background-image: url("images/javascriptCalculator.png");
+  height: 250px;
+  width: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 5px;
+}
+#imgBackground2 {
+  background-image: url("images/simonGame.png");
+  height: 250px;
+  width: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 5px;
+}
+#imgBackground1:hover {
+  box-shadow: 8px 8px 16px gray;
+}
+#imgBackground2:hover {
+  box-shadow: 8px 8px 16px gray;
+}
 .imgCard p {
   text-align: center;
 }
-
 .imgCard a {
   color: black;
   text-decoration: none;
 }
-
 .imgCard a:hover {
   text-decoration: none;
   color: gray;
 }
 .imgCard img {
-  border: 1px black solid;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 5px;
 }
-
+.imgCard img:hover {
+  box-shadow: 8px 8px 16px gray;
+}
 .cardTitle {
   margin-bottom: 0;
   font-size: 120%;
 }
-
 .cardSubtitle {
   font-size: 80%;
 }
-
-
-
-
-
-
-
-#skillsContainer {
-  /*background-color: gray;*/
-  /*background-color: #696969;*/
-  margin: -18 0 .2rem 0;
-  height: 600px;
-  border-bottom: 3px black solid;
-  padding-top: 2rem;
+#mobilePortfolioContainer {
+  display: none;
+  padding-bottom: 5rem;
 }
-#skillsInnerContainer {
-  padding: 1rem 10rem;
+@media (max-width: 930px) {
+  #mobilePortfolioContainer {
+    display: block;
+  }
+  #portfolioContainer2 {
+    display: none;
+  }
+  .imgCard {
+    margin: 2rem 0;
+  }
+  .imgCard img {
+    width: 450px;
+    height: 312px;
+  }
 }
-.box {
-  /*border: 1px black solid;*/
-}
-#htmlPng {
-  margin: 0 1rem;
-}
-#cssPng {
-  margin-right: 1rem;
-}
-#jsPng {
-  margin-bottom: 1rem;
-}
-#sassPng {
-  margin: 0 1rem;
-}
-#reactPng {
-
-}
-#phpPng {
-
-}
-#jekyllPng {
-  /*padding-bottom: 2rem;*/
-}
-#row3 {
-  margin-top: 2rem;
-}
-#gitPng {
-  /*margin-left: 2rem;*/
-  margin-right: 9rem;
-  margin-left: 3rem;
-}
-#webpackPng {
-  /*margin-left: 8rem;*/
-  margin-right: 6rem;
-}
-#babelPng {
-  /*margin-left: 6rem;*/
-  /*margin-right: -85;*/
+@media (max-width: 600px) {
+  .imgCard img {
+    width: 360px;
+    height: 250px;
+  }
 }
 
 
@@ -266,109 +265,104 @@ body, html {
 
 
 
-
-/*
-#educationContainer {
-  height: 640px;
-  margin-top: -18;
-  padding-top: 2rem;
-  border-bottom: 3px black solid;
+/* ---- Education Section ---- */
+#educationContainer3 {
+  margin-top: -18px;
+  width: 100%;
+}
+#universityBanner {
+  justify-content: center;
+  padding-top: 1rem;
+  background-color: #CC1123;
+  width: 100%;
+  height: 350px;
+}
+#universityBanner div {
+  padding: 4rem;
+  font-size: 22px;
   color: white;
-  text-shadow: 2px 2px 4px black;
-  font-family: 'Arial';
-  
+  text-shadow: 2px 2px 2px black;
 }
-.educationBox {
-  background-color: #696969;
-  margin: 1rem 0;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  width: 50%;
+#coursesBanner {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0;
+  width: 100%;
+  /*height: 300px;*/
+  background-color: #F2F2F2;
+  /*border-bottom: 3px black solid;*/
 }
-
-#educationInfo {
-  margin-left: 2rem;
-  padding-top: .75rem;
+#coursesBanner h3 {
+  text-align: center;
+  font-size: 24px;
 }
-#educationInfo p {
-  margin: 0;
+#coursesContainer {
+  padding: 0 2rem 2rem 2rem;
+  background-color: white;
+  box-shadow: 0 0 3px gray;
 }
-.educationBox span {
+#coursesBanner p {
   font-size: 20px;
 }
-.educationBox li {
-  margin: 5px 0;
+#certificationsBanner {
+  width: 100%;
+  padding: 4rem 0 6rem 0;
 }
-
-#universityDiv {
-
-}
-*/
-
-
-#educationContainer2 {
-  padding: 4rem 2rem;
-  height: 420px;
-  border-bottom: 3px black solid;
-}
-.textBox {
-  width: 300px;
-  /*margin: 0 1rem;*/
-  /*border: 1px black solid;*/
-}
-.textBox h3 {
-  margin-top: 2rem;
+#certificationsBanner h3 {
+  margin: 0 0 3rem 0;
+  padding: 0;
   text-align: center;
+  font-size: 36px;
 }
-/*
-.textBox ul {
-  margin-top: 2rem;
+#slideClicker {
+  padding: 0 2rem;
 }
-.textBox li {
-  margin: 1rem 0;
-}
-*/
-.circleContainer {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  border: 3px black solid;
-}
-.circleContainer img {
-  margin-top: .5rem;
-}
-#educationText {
-  /*padding-left: 1rem;*/
-  /*border: 1px black solid;*/
-}
-
-#universityText {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-#bachelorText {
-  margin-bottom: 5px;
-  margin-top: 0;
-}
-#yearText {
+#slideClicker p {
+  line-height: 400px;
   margin: 0;
+  padding: 0;
 }
-/*
-#educationText p {
-  margin-bottom: .25rem;
-  font-size: 18px;
+#slideClicker span {
+  padding: 1rem;
+  box-shadow: 1px 1px 4px lightgray;
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
 }
-#educationText span {
-  margin-bottom: .5rem;
+#slideClicker span:hover {
+  cursor: pointer;
 }
-*/
-#courses {
-  padding-left: 1rem;
+#certificationsBanner img {
+  box-shadow: 2px 2px 2px gray;
 }
-#certs {
-  padding-left: 2rem;
+@media (max-width: 930px) {
+  #educationContainer3 {
+    display: none;
+  }
+  #certificationsBanner {
+    background-color: #F2F2F2;
+  }
+  #coursesBanner {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  #certificationsBanner img {
+    width: 450px;
+    height: 300px;
+  }
+  #slideClicker p {
+    line-height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  #certificationsBanner img {
+    width: 300px;
+    height: 200px;
+  }
+  #slideClicker p {
+    line-height: 200px;
+  }
 }
 
 
@@ -379,14 +373,11 @@ body, html {
 
 
 
-
-
-
+/* ---- About Me Section ---- */
 
 #aboutMeContainer2 {
   padding: 4rem 10rem;
 }
-
 #aboutMeContainer2 img {
   border-radius: 50%;
 }
@@ -407,19 +398,74 @@ body, html {
 #aboutText2 a:hover {
   text-decoration: underline;
 }
+#aboutPic {
+  margin: 10px 0;
+}
+@media (max-width: 1250px) {
+  #aboutMeContainer2 {
+    padding: 4rem 8rem;
+  }
+  #aboutText2 {
+    width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  #aboutMeContainer2 {
+    padding: 4rem 4rem;
+  }
+}
+@media (max-width: 860px) {
+  #aboutMeContainer2 {
+    display: inline-block;
+    padding: 2rem 4rem;
+  }
+  #aboutText2 {
+    width: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  #aboutTextMobileDiv {
+    width: 80%;
+  }
+  #aboutPicContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 720px) {
+  #aboutMeContainer2 {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 720px) {
+  #aboutMeContainer2 {
+    padding: 2rem 0;
+  }
+}
 
 
 
 
 
+
+
+
+
+
+/* ---- Contact Me Section ---- */
 
 #contactContainer {
   margin-top: 1rem;
   padding: 2rem 4rem;
-  /*border: 1px blue solid;*/
+  background-color: #F2F2F2;
+  color: black;
+}
+#contactContainer a {
+  color: black;
 }
 #contactBox {
-  /*border: 1px black solid;*/
   padding-top: .5rem;
 }
 #email {
@@ -429,22 +475,88 @@ body, html {
 #email:hover {
   text-decoration: underline;
 }
+#desktopEmail {
+  margin-top: 2rem;
+}
 #resume {
   text-decoration: none;
 }
 #resume:hover {
   text-decoration: underline;
 }
-
-#widgetDiv {
-  /*border: 1px black solid;*/
-}
 #widgetDiv img {
-  margin: 0 1rem;
+  padding: 1rem;
 }
-
+#widgetDiv img:hover {
+  background-color: white;
+  border-radius: 5px;
+}
 #footer {
   padding-left: 1rem;
   font-size: 14px;
   margin: 1rem 0;
 }
+#footer a {
+  text-decoration: none;
+}
+#mobileEmail {
+  display: none;
+  border: 1px black solid;
+  width: auto;
+  padding: 1rem 1rem;
+  color: black;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+#mobileEmail:hover {
+  cursor: pointer;
+  background-color: gold;
+}
+#mobileResume {
+  display: none;
+  border: 1px black solid;
+  width: auto;
+  padding: 1rem 1rem;
+  color: black;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+#mobileResume:hover {
+  cursor: pointer;
+  background-color: gold;
+}
+@media (max-width: 930px) {
+  #contactContainer {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  #desktopEmail {
+    display: none;
+  }
+  #desktopResume {
+    display: none;
+  }
+  #mobileEmail {
+    display: block;
+  }
+  #mobileResume {
+    display: block;
+  }
+  #emailContainer a:hover {
+    text-decoration: none;
+  }
+  #resumeContainer {
+    border: 1px black solid;
+  }
+  #contactBox {
+    margin-bottom: 2rem;
+    font-family: 'Arial';
+  }
+  #mobileWidgetDiv {
+    justify-content: center;
+  }
+  #footer {
+    margin: 2rem 0;
+  }
+}
+ 
